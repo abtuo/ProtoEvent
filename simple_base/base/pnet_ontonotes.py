@@ -47,7 +47,7 @@ def tokenize(s):
     return re.findall(r"[\w']+|[‑–—“”€№…’\"#$%&\'()+,-./:;<>?]", s)
 
 
-def snips_reader(file='train.txt', dataset_download_path='../ontonotes/', valid_class=None, random_seed=None,
+def snips_reader(file='train', dataset_download_path='../ontonotes/', valid_class=None, random_seed=None,
                  drop_empty=False):
     sentences = []
     ys = []

@@ -16,8 +16,13 @@ def execute(command):
 execute('rm -rf ' + os.getcwd() + '/copies/*')
 execute('rm -rf ' + os.getcwd() + '/logs/*')
 # Here is the list of all classes
-classes = ['GPE', 'DATE', 'ORG', 'EVENT', 'LOC', 'FAC', 'CARDINAL', 'QUANTITY', 'NORP', 'ORDINAL', 'WORK_OF_ART',
-           'PERSON', 'LANGUAGE', 'LAW', 'MONEY', 'PERCENT', 'PRODUCT', 'TIME']
+classes = ['Justice:Fine', 'Justice:Charge-Indict', 'Personnel:Start-Position', 'Life:Die', 'Business:Merge-Org',
+           'Personnel:Elect', 'Transaction:Transfer-Money', 'Personnel:End-Position', 'Justice:Arrest-Jail',
+           'Justice:Execute', 'Transaction:Transfer-Ownership', 'Conflict:Demonstrate', 'Conflict:Attack',
+           'Justice:Acquit', 'Justice:Appeal', 'Justice:Sue', 'Business:Start-Org', 'Contact:Meet',
+           'Justice:Release-Parole', 'Life:Divorce', 'Justice:Sentence', 'Movement:Transport',
+           'Business:Declare-Bankruptcy', 'Justice:Pardon', 'Life:Injure', 'Personnel:Nominate', 'Business:End-Org',
+           'Life:Be-Born', 'Life:Marry', 'Justice:Convict', 'Contact:Phone-Write', 'Justice:Trial-Hearing', 'Justice:Extradite']
 
 GPU = [0, 1, 2] * 6  # I did it this way but you can do using some different way
 configs = list(zip(classes, GPU))
